@@ -5,7 +5,6 @@ import React from "react";
 import { BrowserRouter, Route, Routes} from 'react-router';
 import Home from './components/Home/Home';
 import LoginSignup from './pages/LoginSignup'
-import SignIn from './pages/SignIn';
 
 
 
@@ -15,18 +14,19 @@ function App() {
 
   return (
     <>
-      <BrowserRouter>
+    <LoginSignup/>
+      {/* <BrowserRouter>
       <Navbar/>
       <Home/>
       <Routes>
-        {/* <Route path='/' element={<LoginSignup/>}>
+        <Route path='/' element={<LoginSignup/>}>
         <Route path="/signin" element={<SignIn />} />
 
-        </Route> */}
+        </Route>
       </Routes>
       <Footer/>
       
-      </BrowserRouter>
+      </BrowserRouter> */}
 
     </>
   )
