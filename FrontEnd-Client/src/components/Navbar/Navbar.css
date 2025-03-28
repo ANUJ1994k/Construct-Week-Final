@@ -1,0 +1,30 @@
+.topbar-btn {
+  background: none;
+  border: none;
+  padding: 8px 12px;
+  font-size: 14px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+/* Hover effect */
+.topbar-btn:hover {
+  color: darkcyan;
+}
+
+/* Borders and rounded corners */
+.topbar-btn:first-child {
+  border-left: 1px solid grey;
+  border-radius: 5px 0 0 5px; /* Left rounded corners */
+}
+
+.topbar-btn:not(:first-child) {
+  border-left: 1px solid grey; /* Thin line between buttons */
+}
+
+.topbar-btn:last-child {
+  border-right: 1px solid grey;
+  border-radius: 0 5px 5px 0; /* Right rounded corners */
+}
