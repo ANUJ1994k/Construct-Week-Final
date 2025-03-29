@@ -58,6 +58,8 @@ npm start
 - `POST /api/orders` - Place an order
 - `GET /api/orders` - Fetch user orders
 
+An Snip shot :
+![image](https://github.com/user-attachments/assets/e5b660d9-800a-4845-a4c3-6ba7fe4f1c61)
 
 ---
 ### 💡 Have Suggestions or Issues?
