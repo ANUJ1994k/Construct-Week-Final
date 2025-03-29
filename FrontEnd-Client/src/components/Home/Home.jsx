@@ -44,7 +44,7 @@ const Home = () => {
       </Box>
 
       {/* Image Grid Section */}
-      <Box margin="auto" mt={5} width="100%">
+      <Box margin="auto" mt={5} width="100%" backgroundColor={"whiteAlpha.900"}>
         <Flex justifyContent="center" wrap="nowrap" gap="5px">
           {["2024_landing_page_propositions_01_870x555.avif", "2024_landing_page_propositions_02_870x555.avif",
             "2024_landing_page_propositions_03_ca_870x555.avif", "2024_landing_page_propositions_04_870x555.png"]
@@ -55,12 +55,12 @@ const Home = () => {
       </Box>
 
       {/* Title Section */}
-      <Text fontSize="2xl" fontWeight="bold" textAlign="center" mt={10}>
+      <Text fontSize="2xl" fontWeight="bold" textAlign="center" mt={10} >
         The Biggest Labels
       </Text>
 
       {/* Womens Category */}
-      <Box mt={10} width="auto">
+      <Box mt={10} width="auto" backgroundColor={"white"}>
         <Flex justifyContent="center" wrap="nowrap" gap="21px">
           {["promo_bau_hp_ww_02---v2.avif", "promo_bau_hp_ww_04.avif",
             "promo_bau_hp_ww_01v2.avif", "promo_bau_hp_ww_03.avif"]

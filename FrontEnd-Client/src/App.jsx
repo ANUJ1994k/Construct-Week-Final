@@ -14,19 +14,19 @@ function App() {
 
   return (
     <>
-    <LoginSignup/>
-      {/* <BrowserRouter>
+   
+      <BrowserRouter>
       <Navbar/>
       <Home/>
-      <Routes>
+      {/* <Routes>
         <Route path='/' element={<LoginSignup/>}>
-        <Route path="/signin" element={<SignIn />} />
+        <Route path="/signin" element={<LoginSignup />} />
 
         </Route>
-      </Routes>
+      </Routes> */}
       <Footer/>
       
-      </BrowserRouter> */}
+      </BrowserRouter>
 
     </>
   )

@@ -61,11 +61,11 @@ export const Footer = () => {
         </Flex>
       </Box>
 
-      <Box bg="gray.100" color="gray.700">
+      <Box bg="grey.100" color="grey.600" >
         <Container maxW="container.2xl" maxH={'500px'} padding={5}>
           <SimpleGrid columns={{ base: 1, sm: 2, md: 4 }} spacing={10} p={3} fontFamily="sans-serif">
 
-            <Box textStyle="lg">
+            <Box textStyle="lg"  bg="grey.100">
               <VStack align="start" spacing={1}><Text textStyle="md" fontWeight={"bold"} >Help & Information</Text>
                 {["Help", "Track order", "Delivery & returns", "Sitemap"].map((item) => (
                   <Link key={item} href="#" textStyle="xs" _hover={{ color: "lightblue" }}>
@@ -75,7 +75,7 @@ export const Footer = () => {
               </VStack>
             </Box>
 
-            <Box textStyle="lg">
+            <Box textStyle="lg" bg="grey.100">
               <Text fontWeight="bold" mb={2}>About ASOS</Text>
               <VStack align="start" spacing={1}>
                 {["About us", "Careers at ASOS", "Corporate Responsibility", "Investor's site"].map((item) => (
@@ -86,7 +86,7 @@ export const Footer = () => {
               </VStack>
             </Box>
 
-            <Box textStyle="lg">
+            <Box textStyle="lg" bg="grey.100">
               <Text fontWeight="bold" mb={2}>More From ASOS</Text>
               <VStack align="start" spacing={1}>
                 {["Mobile and ASOS apps", "Gift vouchers", "Black Friday", "ASOS x Thrift+"].map((item) => (
@@ -97,7 +97,7 @@ export const Footer = () => {
               </VStack>
             </Box>
 
-            <Box textStyle="lg">
+            <Box textStyle="lg" bg="grey.100">
               <Text fontWeight="bold" mb={2}>Shopping from:</Text>
               <Link href="#" textStyle="xs" _hover={{ color: "lightblue" }}>
                 <Text display={"flex"}>You're in India <span><Image src='./src/assets/in.png' width="15px" alt="Icon" /></span>| Change</Text>
@@ -113,21 +113,21 @@ export const Footer = () => {
           </SimpleGrid>
         </Container>
       </Box>
-      <Container maxW="container.2xl" maxH="100px" py={2} bg="gray.200">
+      <Container maxW="container.2xl" maxH="100px" py={2} color="gray.900" bg="gray.300">
       <Flex justify="space-between" align="center">
         <Box>
           <Text>© 2025 ASOS</Text>
         </Box>
-        <Box>
+        <Box >
           <ButtonGroup spacing={4}>
             <Link href="#" textDecoration="none">
-              <Button variant="link">Privacy & Cookies</Button>
+              <Button variant="plain" color="gray.900">Privacy & Cookies</Button>
             </Link>
             <Link href="#" textDecoration="none">
-              <Button variant="link">Ts&Cs</Button>
+              <Button variant="plain" color="gray.900">Ts&Cs</Button>
             </Link>
-            <Link href="#" textDecoration="none">
-              <Button variant="link">Accessibility</Button>
+            <Link href="#"  textDecoration="none">
+              <Button variant="plain" color="gray.900">Accessibility</Button>
             </Link>
           </ButtonGroup>
         </Box>

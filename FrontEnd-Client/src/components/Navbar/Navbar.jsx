@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./Navbar.css";
+import asos from "../../assets/asos.svg";
 import {
   Flex,
   Box,
@@ -25,9 +26,9 @@ export const Navbar = () => {
   return (
     <>
       {/* Topbar */}
-      <Box width="100%" minHeight="40px" backgroundColor="white">
+      <Box width="100%" minHeight="40px" backgroundColor="white" color={"gray.700"} >
         <Flex direction="row" justifyContent="flex-end" marginRight="5%">
-          <ButtonGroup size="sm" variant="subtle" isAttached>
+          <ButtonGroup size="sm" isAttached>
             <Button className="topbar-btn">Help & FAQs</Button>
             <Button className="topbar-btn">
               <Image src="./src/assets/in.png" width="15px" alt="Icon" />
@@ -44,14 +45,18 @@ export const Navbar = () => {
         align="center"
         padding={{ base: "10px 20px", md: "15px 50px" }}
         height="12vh"
-        backgroundColor="blackAlpha.800"
+        backgroundColor="gray.800"
         color="white"
         fontWeight="bold"
         wrap="nowrap" // Prevent wrapping
       >
         {/* Logo Section */}
-        <Flex align="center" paddingRight="15px">
-          <img src="./src/assets/logo.svg" alt="ASOS Logo" width="120px" />
+        <Flex align="center" paddingRight="15px" color="whiteAlpha.900">
+          <Flex align="center" paddingRight="15px">
+            <Flex align="center" paddingRight="15px">
+              <img src={asos} alt="ASOS Logo" width="100px" style={{ filter: "invert(1)" }} />
+            </Flex>
+          </Flex>
         </Flex>
 
         {/* Search Input & Menu Links */}
@@ -71,7 +76,9 @@ export const Navbar = () => {
             overflow="hidden"
           >
             <Input
+              type="search"
               placeholder="Search items and brands"
+              aria-label="Search items and brands"
               border="none"
               focusBorderColor="transparent"
               paddingLeft="15px"
@@ -80,8 +87,8 @@ export const Navbar = () => {
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
             />
-            <Box position="absolute" right="10px" top="50%" transform="translateY(-50%)">
-              <BiSearch color="gray.500" size={20} />
+            <Box as="button" position="absolute" right="10px" top="50%" transform="translateY(-50%)" backgroundColor={"white"}>
+              <BiSearch color="gray.400" size={20} />
             </Box>
           </Flex>
         </Flex>
@@ -138,7 +145,7 @@ export const Navbar = () => {
         padding={-5}
         alignItems="center"
       >
-        <Button size="xs" padding={3} border="2px solid white" mx={10}>
+        <Button size="xs" padding={3} border="2px solid white" mx={10} backgroundColor={"black"} color={"white"}>
           WOMEN
         </Button>
 
@@ -151,7 +158,7 @@ export const Navbar = () => {
             cursor="pointer"
             textAlign="center"
           >
-            THE UP-TO-30%-OFF EDIT
+            20% OFF OCCASIONWEAR* <br/>With code: DRESSUP
           </Text>
           {showDiv && (
             <Box
@@ -184,7 +191,7 @@ export const Navbar = () => {
           )}
         </Box>
 
-        <Button size="sm" padding={3} border="2px solid white" mx={10}>
+        <Button size="sm" padding={3} border="2px solid white" mx={10} backgroundColor={"black"} color={"white"}>
           MEN
         </Button>
       </Flex>
