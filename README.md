@@ -58,7 +58,6 @@ npm start
 - `POST /api/orders` - Place an order
 - `GET /api/orders` - Fetch user orders
 
-
 ---
 ### 💡 Have Suggestions or Issues?
 Feel free to open an issue or contribute to the project!
