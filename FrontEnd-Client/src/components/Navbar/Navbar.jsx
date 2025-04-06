@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./Navbar.css";
-import asos from "../../assets/asos.svg";
+import asos from "../assets/asos.svg"
 import {
   Flex,
   Box,

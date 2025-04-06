@@ -100,7 +100,7 @@ export const Footer = () => {
             <Box textStyle="lg" bg="grey.100">
               <Text fontWeight="bold" mb={2}>Shopping from:</Text>
               <Link href="#" textStyle="xs" _hover={{ color: "lightblue" }}>
-                <Text display={"flex"}>You're in India <span><Image src='./src/assets/in.png' width="15px" alt="Icon" /></span>| Change</Text>
+                <Text display={"flex"}>You're in India <span><Image src='../assets/in.png' width="15px" alt="Icon" /></span>| Change</Text>
               </Link>
               <Text textStyle="xs" mt={2}>Some of our international sites:</Text>
               <Box display="flex" flexWrap="wrap" gap={5} mt={2} maxWidth="50%">
@@ -113,26 +113,28 @@ export const Footer = () => {
           </SimpleGrid>
         </Container>
       </Box>
-      <Container maxW="container.2xl" maxH="100px" py={2} color="gray.900" bg="gray.300">
-      <Flex justify="space-between" align="center">
-        <Box>
-          <Text>© 2025 ASOS</Text>
-        </Box>
-        <Box >
-          <ButtonGroup spacing={4}>
-            <Link href="#" textDecoration="none">
-              <Button variant="plain" color="gray.900">Privacy & Cookies</Button>
-            </Link>
-            <Link href="#" textDecoration="none">
-              <Button variant="plain" color="gray.900">Ts&Cs</Button>
-            </Link>
-            <Link href="#"  textDecoration="none">
-              <Button variant="plain" color="gray.900">Accessibility</Button>
-            </Link>
-          </ButtonGroup>
-        </Box>
-      </Flex>
-    </Container>
+      <Box width="100%" py={2} color="gray.900" bg="gray.300">
+  <Container maxW="100%" px={4}>
+    <Flex justify="space-between" align="center">
+      <Box>
+        <Text>© 2025 ASOS</Text>
+      </Box>
+      <Box>
+        <ButtonGroup spacing={4}>
+          <Link href="#" textDecoration="none">
+            <Button variant="plain" color="gray.900">Privacy & Cookies</Button>
+          </Link>
+          <Link href="#" textDecoration="none">
+            <Button variant="plain" color="gray.900">Ts&Cs</Button>
+          </Link>
+          <Link href="#" textDecoration="none">
+            <Button variant="plain" color="gray.900">Accessibility</Button>
+          </Link>
+        </ButtonGroup>
+      </Box>
+    </Flex>
+  </Container>
+</Box>
     </>
 
 
